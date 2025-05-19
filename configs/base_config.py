@@ -393,7 +393,6 @@ class Config:
         parser.add_argument("--bn_type", type=str, default="NormalBatchNorm", 
                             help="NormalBatchNorm for resnet20 | SplitBatchNorm for Split_ResNet")
         
-        parser.add_argument("--no_wandb", action="store_true", default=True, help="disable wandb")
         self.parser = parser
     #in_channels_order
     def parse(self, args):
